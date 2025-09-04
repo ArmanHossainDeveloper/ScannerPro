@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+	<View
+		android:tag="left_swiper"
+		android:layout_height="match_parent"
+		android:layout_width="18dip"
+		android:visibility="gone"/>
+
+	<View
+		android:tag="right_swiper"
+		android:layout_height="match_parent"
+		android:layout_width="18dip"
+		android:layout_alignParentRight="true"
+		android:visibility="gone"/>
+
+	<LinearLayout
+		android:tag="left_drawer"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="horizontal"
+		android:visibility="gone">
+
+		<!-- Here goes Left-->
+
+		<View
+			android:tag="left_closer"
+			android:layout_height="match_parent"
+			android:layout_width="0dp"
+			android:layout_weight="1"/>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:tag="right_drawer"
+		android:layout_height="match_parent"
+		android:layout_width="match_parent"
+		android:orientation="horizontal"
+		android:layout_alignParentRight="true"
+		android:visibility="gone">
+
+		<View
+			android:tag="right_closer"
+			android:layout_height="match_parent"
+			android:layout_width="0dp"
+			android:layout_weight="1"/>
+
+
+		<!-- Here goes Right-->
+
+	</LinearLayout>
+
+</RelativeLayout>
+
+

@@ -1,0 +1,184 @@
+<resources>
+<!-- Base application theme. -->
+<style name="AppTheme" parent="android:Theme.Material.Light.NoActionBar">
+</style>
+    <style name="button">
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:layout_margin">1dp</item>-->
+    </style>
+
+    <style name="timer_button">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:textAllCaps">false</item>
+        <!--<item name="android:textStyle">bold</item>-->
+    </style>
+
+    <style name="popup_menu">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <!--<item name="android:layout_marginTop">10dp</item>-->
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+
+    <style name="option_row">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="option_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textSize">18dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">#000</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:gravity">center</item>
+        <!--<item name="android:textStyle">bold</item>-->
+    </style>
+
+
+    <style name="option_edittext">
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:inputType">number</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">#000</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:gravity">center</item>
+        <!--<item name="android:textStyle">bold</item>-->
+    </style>
+
+    <style name="option_seekbar">
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:progress">4</item>
+        <item name="android:max">24</item>
+        <!--<item name="android:textStyle">bold</item>-->
+    </style>
+
+    <style name="option_spinner">
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@android:drawable/btn_dropdown</item>
+        <item name="android:spinnerMode">dropdown</item>
+        <!--<item name="android:textStyle">bold</item>-->
+    </style>
+
+    <style name="radio_group">
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="radio_option">
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textSize">12dp</item>
+        <item name="android:textColor">#000</item>
+        <item name="android:layout_gravity">center</item>
+        <!--<item name="android:textStyle">bold</item>-->
+    </style>
+
+<style name="click_btn">
+        <item name="android:onClick">onClick</item>
+    </style>
+
+
+    <style name="basic_btn_config" parent="click_btn">
+        <item name="android:layout_margin">1dp</item>
+        <item name="android:gravity">center</item>
+
+    </style>
+    <style name="home_menu_btn">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:fontFamily">monospace</item>
+        <item name="android:textSize">24dp</item>
+
+    </style>
+
+    <style name="text_btn" parent="basic_btn_config">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">30dp</item>
+
+    </style>
+    <style name="img_btn" parent="basic_btn_config">
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_width">40dp</item>
+        <item name="android:scaleType">centerCrop</item>
+        <item name="android:background">#00000000</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+
+    <style name="drawer_menu_txt_btn" parent="text_btn">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">#f90</item>
+        <item name="android:layout_margin">3dp</item>
+    </style>
+
+    <style name="drawer_menu_img_btn" parent="img_btn">
+        <item name="android:layout_marginTop">5dp</item>
+    </style>
+
+
+
+
+
+    <style name="StyleSet"><!--
+        <item name="android:"></item>
+
+        <item name="android:layout_width"></item>
+        <item name="android:layout_height"></item>
+        <item name="android:layout_weight"></item>
+
+        <item name="android:textSize"></item>
+        <item name="android:textColor"></item>
+        <item name="android:textStyle">bold|italic</item>
+
+        <item name="android:gravity"></item>
+        <item name="android:layout_gravity"></item>
+
+        <item name="android:layout_margin"></item>
+        <item name="android:layout_marginTop"></item>
+        <item name="android:layout_marginLeft"></item>
+        <item name="android:layout_marginRight"></item>
+        <item name="android:layout_marginBottom"></item>
+
+        <item name="android:padding"></item>
+        <item name="android:paddingTop"></item>
+        <item name="android:paddingLeft"></item>
+        <item name="android:paddingRight"></item>
+        <item name="android:paddingBottom"></item>
+
+        <item name="android:color"></item>
+        <item name="android:background"></item>
+
+        <item name="android:fontFamily">monospace</item>
+        <item name="android:visibility"></item>
+    --></style>
+
+
+
+
+
+
+</resources>

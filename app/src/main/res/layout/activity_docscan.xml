@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+        <arman.common.ui.widget.PhotoView
+            android:id="@+id/scan_preview"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#ffcccccc"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal">
+
+
+
+            <TextView
+                style="@style/option_text"
+                android:text="BS: "/>
+
+            <NumberPicker
+                android:id="@+id/block_size_picker"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"/>
+
+
+
+            <TextView
+                style="@style/option_text"
+                android:text="C: "/>
+
+            <NumberPicker
+                android:id="@+id/const_picker"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"/>
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:textSize="18dp"
+                android:textColor="#ff000000"
+                android:text="font pixel height * 1.5"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#ff000000"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:textSize="18dp"
+                android:textColor="#ff000000"
+                android:paddingLeft="5dp"
+                android:text="noise-detail tread-off"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/button_area"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+
+
+            <Button
+                android:id="@+id/preview_btn"
+                style="@style/button"
+                android:layout_height="50dp"
+                android:text="Preview" />
+
+            <Button
+                android:id="@+id/save_btn"
+                style="@style/button"
+                android:layout_height="50dp"
+                android:text="Save" />
+
+        </LinearLayout>
+
+   <!-- <View
+        android:layout_width="match_parent"
+        android:layout_height="100dp"/>
+-->
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

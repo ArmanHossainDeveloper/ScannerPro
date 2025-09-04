@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/decrease_time_btn"
+            style="@style/timer_button"
+            android:text="-1s" />
+
+        <Button
+            android:id="@+id/time_btn"
+            style="@style/timer_button"
+            android:text="9s"
+            android:background="#ffeeeeee"/>
+
+        <Button
+            android:id="@+id/increase_time_btn"
+            style="@style/timer_button"
+            android:text="+1s" />
+
+    </LinearLayout>
+
+
+    <TextureView
+        android:id="@+id/texture"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="8dp" />
+
+    <LinearLayout
+        android:id="@+id/button_area"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/capture_btn"
+            style="@style/button"
+            android:text="Capture" />
+
+        <Button
+            android:id="@+id/view_btn"
+            style="@style/button"
+            android:text="View" />
+
+    </LinearLayout>
+
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:orientation="vertical">
+
+        <LinearLayout
+            style="@style/option_row">
+
+            <TextView
+                style="@style/option_text"
+                android:text="Settings"
+                android:onClick="togglePopupMenu"/>
+
+            <TextView
+                android:id="@+id/setting_overview_tv"
+                style="@style/option_text"
+                android:layout_width="match_parent"
+                android:text="16MP, iso:300, bs:61, c:18" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/popup_menu"
+            style="@style/popup_menu"
+            android:visibility="gone">
+
+            <LinearLayout
+                style="@style/option_row">
+
+                <TextView
+                    style="@style/option_text"
+                    android:text="Resolution:" />
+
+                <Spinner
+                    android:id="@+id/resolution_spinner"
+                    style="@style/option_spinner"/>
+
+                <!--<RadioGroup
+                    android:id="@+id/resolution_rg"
+                    style="@style/radio_group"
+                    android:checkedButton="@id/default_resolution"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        style="@style/radio_option"
+                        android:text="8MP"/>
+
+                    <RadioButton
+                        android:id="@+id/default_resolution"
+                        style="@style/radio_option"
+                        android:text="16MP"/>
+
+                    <RadioButton
+                        style="@style/radio_option"
+                        android:text="64MP"/>
+
+                </RadioGroup>-->
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/option_row">
+
+                <TextView
+                    style="@style/option_text"
+                    android:text="Zoom:" />
+
+                <Spinner
+                    android:id="@+id/zoom_spinner"
+                    style="@style/option_spinner"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/option_row">
+
+                <TextView
+                    style="@style/option_text"
+                    android:text="Shutter Speed:" />
+
+                <Spinner
+                    android:id="@+id/shutter_speed_spinner"
+                    style="@style/option_spinner"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/option_row">
+
+                <TextView
+                    style="@style/option_text"
+                    android:text="Image Format:" />
+
+                <Spinner
+                    android:id="@+id/image_format_spinner"
+                    style="@style/option_spinner"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                style="@style/option_row">
+
+                <TextView
+                    style="@style/option_text"
+                    android:text="ISO Sensitivity :"/>
+
+                <SeekBar
+                    android:id="@+id/iso_seekbar"
+                    style="@style/option_seekbar" />
+
+                <TextView
+                    android:id="@+id/iso_tv"
+                    style="@style/option_text"
+                    android:text="300"/>
+
+            </LinearLayout>
+
+<!--
+            <LinearLayout
+                style="@style/option_row">
+
+                <TextView
+                    style="@style/option_text"
+                    android:text="Block Size :"/>
+
+                <SeekBar
+                    android:id="@+id/block_size_seekbar"
+                    style="@style/option_seekbar"
+                    android:progress="29"
+                    android:max="100" />
+
+                <TextView
+                    android:id="@+id/block_size_tv"
+                    style="@style/option_text"
+                    android:text="61" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                style="@style/option_row">
+
+                <TextView
+                    style="@style/option_text"
+                    android:text="Subs Const :"/>
+
+                <SeekBar
+                    android:id="@+id/const_seekbar"
+                    style="@style/option_seekbar"
+                    android:progress="18"
+                    android:max="50"/>
+
+                <TextView
+                    android:id="@+id/const_tv"
+                    style="@style/option_text"
+                    android:text="18"/>
+
+            </LinearLayout>-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="horizontal">
+
+
+
+                <TextView
+                    style="@style/option_text"
+                    android:text="BS: "/>
+
+                <NumberPicker
+                    android:id="@+id/cam_block_size_picker"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"/>
+
+
+
+                <TextView
+                    style="@style/option_text"
+                    android:text="C: "/>
+
+                <NumberPicker
+                    android:id="@+id/cam_const_picker"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"/>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+

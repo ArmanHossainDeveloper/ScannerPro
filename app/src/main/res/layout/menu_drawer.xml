@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="150dip"
+    android:layout_height="match_parent"
+    android:background="#00FB00"
+	android:layout_gravity="left"
+    android:orientation="vertical">
+
+	<TextView
+		android:id="@+id/menu"
+		style="@style/drawer_menu_txt_btn"
+		android:text="Menu"/>
+
+	<TextView
+		android:id="@+id/settings"
+		style="@style/drawer_menu_txt_btn"
+		android:text="Setting"/>
+
+	<TextView
+		android:id="@+id/about"
+		style="@style/drawer_menu_txt_btn"
+		android:text="About"/>
+
+	<TextView
+		android:id="@+id/exit"
+		style="@style/drawer_menu_txt_btn"
+		android:text="Exit"/>
+
+</LinearLayout>
+
+
+
+
+
